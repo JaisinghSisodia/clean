@@ -71,7 +71,7 @@ class ViewController: UIViewController {
         let model1 : viewModelMvvm = viewModelMvvm(Person.init(name: "xzy", age: 25, address: "pune hadapsar jsj jkdsjs", desg: "pune", email: "email.com"))
        
         
-        print(" changes in view")
+        print(" changes in view  ")
         model1.name.bindandfire {
               [unowned self] in
             self.lblName.text = $0
