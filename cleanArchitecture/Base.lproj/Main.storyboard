@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -90,7 +90,7 @@
                                 </constraints>
                             </stackView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l5N-SY-4aR" customClass="bindabletextfield" customModule="cleanArchitecture" customModuleProvider="target">
-                                <rect key="frame" x="93" y="318" width="189" height="30"/>
+                                <rect key="frame" x="93" y="322" width="189" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.90200442079999998" blue="0.46267604829999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ddc-uS-XtG"/>
@@ -114,17 +114,34 @@
                                     <action selector="btnSend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2IL-Q8-SXb"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DE4-zW-mAj" customClass="bindabletextfield" customModule="cleanArchitecture" customModuleProvider="target">
+                                <rect key="frame" x="104" y="502" width="189" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.90200442079999998" blue="0.46267604829999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="189" id="gAB-fT-QMW"/>
+                                    <constraint firstAttribute="height" constant="30" id="jLe-r7-Gk4"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="PrC-dY-rMY"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DE4-zW-mAj" secondAttribute="trailing" constant="82" id="BNm-CM-aej"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GBg-uQ-mPQ" secondAttribute="bottom" constant="240" id="Gna-LQ-X0V"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QVq-VN-8X9" secondAttribute="trailing" constant="93" id="QDd-Lh-VZR"/>
                             <constraint firstItem="QVq-VN-8X9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="QQ4-8z-PND"/>
+                            <constraint firstItem="DE4-zW-mAj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="T49-XJ-zYR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l5N-SY-4aR" secondAttribute="trailing" constant="93" id="U6O-pU-wZH"/>
                             <constraint firstItem="QVq-VN-8X9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="aHt-Gq-YjT"/>
+                            <constraint firstItem="DE4-zW-mAj" firstAttribute="top" secondItem="GBg-uQ-mPQ" secondAttribute="bottom" constant="75" id="eOy-y3-bT8"/>
                             <constraint firstItem="GBg-uQ-mPQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="h2S-pp-yhf"/>
                             <constraint firstItem="l5N-SY-4aR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="ql0-mB-ORi"/>
-                            <constraint firstItem="l5N-SY-4aR" firstAttribute="top" secondItem="QVq-VN-8X9" secondAttribute="bottom" constant="48" id="xOU-hi-u1H"/>
+                            <constraint firstItem="l5N-SY-4aR" firstAttribute="top" secondItem="QVq-VN-8X9" secondAttribute="bottom" constant="52" id="xOU-hi-u1H"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GBg-uQ-mPQ" secondAttribute="trailing" constant="122" id="yip-Wj-rxl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
