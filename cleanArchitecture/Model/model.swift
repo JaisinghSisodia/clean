@@ -17,6 +17,7 @@ struct Person {
     let address : String
     let desg : String
     let email : String
+    let ahi : String
     
     
 //    init(name : String , age : Int , address : String , desg : String)
