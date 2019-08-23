@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -105,6 +105,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBg-uQ-mPQ">
                                 <rect key="frame" x="122" y="397" width="131" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.90200442079999998" blue="0.46267604829999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="UCs-Z0-yXS"/>
                                     <constraint firstAttribute="width" constant="131" id="sjo-At-DL0"/>
@@ -130,7 +131,7 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="riQ-Y0-gSg" customClass="bindabletextfield" customModule="cleanArchitecture" customModuleProvider="target">
                                 <rect key="frame" x="102" y="575" width="189" height="30"/>
-                                <color key="backgroundColor" red="0.96470051999999995" green="0.55296790600000001" blue="0.15690526369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.49019607840000001" green="0.23921568630000001" blue="0.55681079499999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="189" id="4L3-Ph-gjZ"/>
                                     <constraint firstAttribute="height" constant="30" id="sFN-yD-XaL"/>
@@ -154,25 +155,25 @@
                                     <action selector="btnSend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Hy-rZ-qip"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sg5-Lb-NaO">
-                                <rect key="frame" x="264" y="0.0" width="111" height="83"/>
-                                <color key="backgroundColor" red="0.091637591310000002" green="0.90980392160000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1b-7L-r7f">
+                                <rect key="frame" x="0.0" y="0.0" width="124" height="91"/>
+                                <color key="backgroundColor" red="0.51373529429999998" green="0.15690124029999999" blue="0.58816391229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="111" id="Fhe-jm-uPQ"/>
-                                    <constraint firstAttribute="height" constant="83" id="Pm7-wJ-xWk"/>
+                                    <constraint firstAttribute="height" constant="91" id="jWj-nb-Bso"/>
+                                    <constraint firstAttribute="width" constant="124" id="kIm-iH-5bQ"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="btnSend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m4m-Iq-pYe"/>
+                                    <action selector="btnSend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VfW-4b-Xql"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="riQ-Y0-gSg" firstAttribute="top" secondItem="DE4-zW-mAj" secondAttribute="bottom" constant="43" id="8Ys-gZ-idw"/>
+                            <constraint firstItem="h1b-7L-r7f" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9et-zG-uRV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DE4-zW-mAj" secondAttribute="trailing" constant="82" id="BNm-CM-aej"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="riQ-Y0-gSg" secondAttribute="trailing" constant="84" id="CCn-N3-C3t"/>
-                            <constraint firstItem="sg5-Lb-NaO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Eb2-HD-fI1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GBg-uQ-mPQ" secondAttribute="bottom" constant="240" id="Gna-LQ-X0V"/>
                             <constraint firstItem="DE4-zW-mAj" firstAttribute="top" secondItem="Yrc-ml-dPW" secondAttribute="bottom" constant="33" id="Hka-Of-CXX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QVq-VN-8X9" secondAttribute="trailing" constant="93" id="QDd-Lh-VZR"/>
@@ -180,12 +181,12 @@
                             <constraint firstItem="DE4-zW-mAj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="T49-XJ-zYR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l5N-SY-4aR" secondAttribute="trailing" constant="93" id="U6O-pU-wZH"/>
                             <constraint firstItem="riQ-Y0-gSg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="102" id="Ux2-H2-wtK"/>
+                            <constraint firstItem="h1b-7L-r7f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WVz-z9-B06"/>
                             <constraint firstItem="QVq-VN-8X9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="aHt-Gq-YjT"/>
-                            <constraint firstItem="QVq-VN-8X9" firstAttribute="top" secondItem="sg5-Lb-NaO" secondAttribute="bottom" constant="8" id="aJS-Nn-MkV"/>
                             <constraint firstItem="Yrc-ml-dPW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aSV-ka-rrI"/>
-                            <constraint firstItem="sg5-Lb-NaO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dUu-dh-2zg"/>
                             <constraint firstItem="DE4-zW-mAj" firstAttribute="top" secondItem="GBg-uQ-mPQ" secondAttribute="bottom" constant="75" id="eOy-y3-bT8"/>
                             <constraint firstItem="GBg-uQ-mPQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="h2S-pp-yhf"/>
+                            <constraint firstItem="QVq-VN-8X9" firstAttribute="top" secondItem="h1b-7L-r7f" secondAttribute="bottom" id="p7Z-4u-Mpd"/>
                             <constraint firstItem="Yrc-ml-dPW" firstAttribute="top" secondItem="l5N-SY-4aR" secondAttribute="bottom" constant="2" id="pPc-bg-NvW"/>
                             <constraint firstItem="l5N-SY-4aR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="ql0-mB-ORi"/>
                             <constraint firstItem="l5N-SY-4aR" firstAttribute="top" secondItem="QVq-VN-8X9" secondAttribute="bottom" constant="52" id="xOU-hi-u1H"/>
