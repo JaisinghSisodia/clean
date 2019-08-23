@@ -91,7 +91,7 @@
                             </stackView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l5N-SY-4aR" customClass="bindabletextfield" customModule="cleanArchitecture" customModuleProvider="target">
                                 <rect key="frame" x="93" y="322" width="189" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.90200442079999998" blue="0.46267604829999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.49019607840000001" green="0.23921568630000001" blue="0.55681079499999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ddc-uS-XtG"/>
                                     <constraint firstAttribute="width" constant="189" id="pFv-c0-aRo"/>
