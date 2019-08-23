@@ -105,6 +105,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBg-uQ-mPQ">
                                 <rect key="frame" x="122" y="397" width="131" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.90200442079999998" blue="0.46267604829999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="UCs-Z0-yXS"/>
                                     <constraint firstAttribute="width" constant="131" id="sjo-At-DL0"/>
