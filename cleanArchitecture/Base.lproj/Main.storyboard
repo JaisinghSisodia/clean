@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -128,36 +128,38 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="PrC-dY-rMY"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVU-sc-ENF">
-                                <rect key="frame" x="9" y="435" width="131" height="66"/>
-                                <color key="backgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="riQ-Y0-gSg" customClass="bindabletextfield" customModule="cleanArchitecture" customModuleProvider="target">
+                                <rect key="frame" x="102" y="575" width="189" height="30"/>
+                                <color key="backgroundColor" red="0.96470051999999995" green="0.55296790600000001" blue="0.15690526369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="JgZ-Te-R7h"/>
-                                    <constraint firstAttribute="width" constant="131" id="x9u-Hj-2TR"/>
+                                    <constraint firstAttribute="width" constant="189" id="4L3-Ph-gjZ"/>
+                                    <constraint firstAttribute="height" constant="30" id="sFN-yD-XaL"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="btnSend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="62r-6J-mcM"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="0S3-b0-TSe"/>
                                 </connections>
-                            </button>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="EVU-sc-ENF" firstAttribute="top" secondItem="GBg-uQ-mPQ" secondAttribute="bottom" constant="8" id="1cS-os-xca"/>
+                            <constraint firstItem="riQ-Y0-gSg" firstAttribute="top" secondItem="DE4-zW-mAj" secondAttribute="bottom" constant="43" id="8Ys-gZ-idw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DE4-zW-mAj" secondAttribute="trailing" constant="82" id="BNm-CM-aej"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="riQ-Y0-gSg" secondAttribute="trailing" constant="84" id="CCn-N3-C3t"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GBg-uQ-mPQ" secondAttribute="bottom" constant="240" id="Gna-LQ-X0V"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QVq-VN-8X9" secondAttribute="trailing" constant="93" id="QDd-Lh-VZR"/>
                             <constraint firstItem="QVq-VN-8X9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="QQ4-8z-PND"/>
                             <constraint firstItem="DE4-zW-mAj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="T49-XJ-zYR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l5N-SY-4aR" secondAttribute="trailing" constant="93" id="U6O-pU-wZH"/>
+                            <constraint firstItem="riQ-Y0-gSg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="102" id="Ux2-H2-wtK"/>
                             <constraint firstItem="QVq-VN-8X9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="aHt-Gq-YjT"/>
                             <constraint firstItem="DE4-zW-mAj" firstAttribute="top" secondItem="GBg-uQ-mPQ" secondAttribute="bottom" constant="75" id="eOy-y3-bT8"/>
                             <constraint firstItem="GBg-uQ-mPQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="h2S-pp-yhf"/>
                             <constraint firstItem="l5N-SY-4aR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="ql0-mB-ORi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EVU-sc-ENF" secondAttribute="trailing" constant="235" id="uHA-Mc-Sb3"/>
                             <constraint firstItem="l5N-SY-4aR" firstAttribute="top" secondItem="QVq-VN-8X9" secondAttribute="bottom" constant="52" id="xOU-hi-u1H"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GBg-uQ-mPQ" secondAttribute="trailing" constant="122" id="yip-Wj-rxl"/>
-                            <constraint firstItem="EVU-sc-ENF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="9" id="z63-mj-Mpt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
